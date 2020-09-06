@@ -143,3 +143,8 @@ dmypy.json
 .pytype/
 
 .vscode/
+
+# static files generated from Django application using `collectstatic`
+media
+static_root
+media_root

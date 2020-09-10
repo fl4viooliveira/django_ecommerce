@@ -1,4 +1,3 @@
-
 <nav class="site-navigation text-right text-md-center" role="navigation">
     <div class="container">
         <ul class="site-menu js-clone-nav d-none d-md-block" style="padding: 0;">
@@ -6,7 +5,7 @@
             <li><a href="{% url 'cart:product-list' %}">Shop</a></li>
             <li><a href="{% url 'contact' %}">Contact</a></li>
             {% if request.user.is_staff %}
-                <li><a href="/">Staff</a></li>
+                <li><a href="{% url 'staff:staff' %}">Staff</a></li>
             {% endif %}
         </ul>
     </div>

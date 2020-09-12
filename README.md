@@ -110,3 +110,7 @@ Email-me: fl4viooliveira@gmail.com
 Connect with me at [LinkedIn](https://www.linkedin.com/in/flavio-oliveira-4293641aa/)
 
 Thank you!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/fl4viooliveira/django_ecommerce/blob/master/LICENSE) file for details.

@@ -118,6 +118,10 @@ MEDIA_ROOT = BASE_DIR / 'media_root' # is equal to os.path.join(BASE_DIR, 'media
 PAYPAL_CLIENT_ID = env('PAYPAL_SANDBOX_CLIENT_ID')
 PAYPAL_SECRET_KEY = env('PAYPAL_SANDBOX_SECRET_KEY')
 
+STRIPE_PUBLIC_KEY = env("STRIPE_PUBLIC_KEY")
+STRIPE_SECRET_KEY = env("STRIPE_SECRET_KEY")
+STRIPE_WEBHOOK_SECRET = env("STRIPE_WEBHOOK_SECRET")
+
 
 # ----------------------------- IN PRODUCTION ----------------------------------
 

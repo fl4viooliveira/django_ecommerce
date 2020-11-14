@@ -3,8 +3,6 @@
 <p align='center'>
 <img src="https://img.shields.io/badge/Django-239120?logo=django&logoColor=white" />
 <img src="https://img.shields.io/badge/Python-239120?logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white" />
-<img src="https://img.shields.io/badge/NGINX-4A154B?logo=nginx&logoColor=white" />
 <img src="https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white" />
 <img src="https://img.shields.io/badge/html5-E34F26?logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/css3-1572B6?logo=css3&logoColor=white" />

@@ -9,6 +9,9 @@
 <img src="https://img.shields.io/badge/bootstrap-563D7C?logo=bootstrap&logoColor=white" />
 <img src="https://img.shields.io/badge/Github-181717?logo=github&logoColor=white" />
 </p>
+<img src="https://img.shields.io/badge/PayPal-000144?logo=paypal&logoColor=white" />
+</p>
+
 
 <hr class="dotted">
 It is an E-commerce system built in Django. It contains all the essentials for adding products and use PayPal and Stripe as payment systems.

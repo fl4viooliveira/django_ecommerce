@@ -149,4 +149,4 @@ dmypy.json
 # static files generated from Django application using `collectstatic`
 media
 static_root
-media_root
+media_root!/ecom/settings/local.py

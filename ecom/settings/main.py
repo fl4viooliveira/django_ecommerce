@@ -1,13 +1,13 @@
 from pathlib import Path
-from typing import List, Dict, Tuple, Any
+from typing import (List, Dict, Tuple, Any)
 
-import environ
+from environ import Env
 
-env = environ.Env()
+env = Env()
 
 BASE_DIR: Path = Path(__file__).resolve().parent.parent
 SECRET_KEY: str = env.str('SECRET_KEY', 'default-secret-key')
-DEBUG: bool = env.bool('DEBUG', False)
+DEBUG: bool = False
 ALLOWED_HOSTS: List[str] = ['www.domain.com', ]
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
@@ -85,8 +85,12 @@ TEMPLATES: List[Dict[str, Any]] = [{
 # region
 DATABASES: Dict[str, Dict[str, Any]] = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': env.str('DATABASE_NAME', 'django_ecommerce'),
+        'USER': env.str('DATABASE_USER', 'postgres'),
+        'PASSWORD': env.str('DATABASE_PASSWORD', '12345'),
+        'HOST': env.str('DATABASE_HOST', 'localhost'),
+        'PORT': env.str('DATABASE_PORT', '5432'),
     }
 }
 # endregion

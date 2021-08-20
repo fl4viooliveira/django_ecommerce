@@ -14,3 +14,6 @@ class ProductForm(forms.ModelForm):
             'available_colours',
             'available_sizes',
         ]
+
+
+__all__ = ('ProductForm',)

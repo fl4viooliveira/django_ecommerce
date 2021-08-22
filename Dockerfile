@@ -25,6 +25,6 @@ RUN true \
 RUN mkdir -p $PROJECT_DIR/ecom/static
 RUN python $PROJECT_DIR/manage.py migrate
 RUN python $PROJECT_DIR/manage.py collectstatic
-RUN gunicorn $PROJECT_DIR/ecom/ecom.wsgi:application -c $PROJECT_DIR/ecom/gunicorn.py
+RUN gunicorn ecom.wsgi:application -c $PROJECT_DIR/ecom/gunicorn.py
 
-EXPOSE 80
+EXPOSE 8000

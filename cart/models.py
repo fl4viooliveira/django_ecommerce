@@ -75,7 +75,7 @@ class Product(models.Model):
     available_sizes = models.ManyToManyField(SizeVariation)
     available_colours = models.ManyToManyField(ColourVariation)
     secondary_categories = models.ManyToManyField(to=Category, blank=True)
-    price = models.DecimalField(default=0, max_length=5, max_digits=2, )
+    price = models.DecimalField(default=0, max_digits=9, decimal_places=2, )
     primary_category = models.ForeignKey(
         to=Category,
         on_delete=models.CASCADE,

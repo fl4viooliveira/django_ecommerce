@@ -1,0 +1,17 @@
+.idea
+venv/
+venv
+*.pyc
+local_example.py
+local.py
+media/
+media_root/
+.gitattributes
+.gitignore
+LICENSE
+NOTES.md
+README.md
+.dockerignore
+.git
+Dockerfile
+
